@@ -6,13 +6,13 @@ box-sizing: border-box;
 }
 
 .logo {
-    color: rgb(7, 206, 163);
+    color: rgb(107, 10, 172);
     font-weight: bold;
     font-size: 30px;
 }
 
 .logo:hover {
-    color: rgb(8, 4, 235);
+    color: rgb(53, 102, 175);
 }
 
 .nav-main {
@@ -34,23 +34,139 @@ height: 60px;
     font-size: large;
 }
 
-.nav-main-ul li a {
+ .nav-main-ul li a {
 text-decoration: none;
 color: black;
 font-weight: 600;
 }
 
-.nav-main-ul li a:hover {
-    color: rgb(144, 15, 177);
+/* .nav-main-ul li a:hover {
+     color: rgb(144, 15, 177); 
+     transform: scale(2); 
+}  */
+
+
+
+
+/*
+---------------------------------------
+hover effect for 
+---------------------------------------
+*/
+
+.nav-main-ul a {
+	padding: 10px 20px;
+	position: relative;
+	overflow: hidden;
+	display: inline-block;
+	-webkit-transition: 0.3s ease-out;
+	-moz-transition: 0.3s ease-out;
+	transition: 0.3s ease-out;
 }
 
+.nav-main-ul a span:before {
+	width: 5px;
+	height: 5px;
+	background: transparent;
+	content: "";
+	position: absolute;
+	left: 0;
+	top: 0;
+	border-top: 2px solid #218c74;
+	border-left: 2px solid #218c74;
+	-webkit-transition: 0.3s;
+	-moz-transition: 0.3s;
+	transition: 0.3s;
+	opacity: 0;
+}
+
+.nav-main-ul a span:after {
+	width: 6px;
+	height: 6px;
+	background: transparent;
+	content: "";
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	border-right: 2px solid #218c74;
+	border-bottom: 2px solid #218c74;
+	-webkit-transition: 0.3s;
+	-moz-transition: 0.3s;
+	transition: 0.3s;
+	opacity: 0;
+}
+
+.nav-main-ul a:before {
+	width: 6px;
+	height: 6px;
+	background: transparent;
+	content: "";
+	position: absolute;
+	right: 0;
+	top: 0;
+	border-right: 2px solid #218c74;
+	border-top: 2px solid #218c74;
+	-webkit-transition: 0.3s;
+	-moz-transition: 0.3s;
+	transition: 0.3s;
+	opacity: 0;
+}
+
+.nav-main-ul a:after {
+	width: 6px;
+	height: 6px;
+	background: transparent;
+	content: "";
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	border-left: 2px solid #218c74;
+	border-bottom: 2px solid #218c74;
+	-webkit-transition: 0.3s;
+	-moz-transition: 0.3s;
+	transition: 0.3s;
+	opacity: 0;
+}
+
+.nav-main-ul a:hover {
+	color: #0703eb;
+}
+
+.nav-main-ul a:hover:before {
+	opacity: 1;
+	right: 5px;
+	top: 5px;
+}
+
+.nav-main-ul a:hover:after {
+	opacity: 1;
+	left: 5px;
+	bottom: 5px;
+}
+
+.nav-main-ul a:hover span:before {
+	opacity: 1;
+	left: 5px;
+	top: 5px;
+}
+
+.nav-main-ul a:hover span:after {
+	opacity: 1;
+	right: 5px;
+	bottom: 5px;
+}
+
+/* end of link hover */
+
+
 .nav-social-ul {
+list-style-type: none;
 display: flex;
 gap: 30px;
 }
 
-.nav-social-ul hover{
-    transform:scale(2);
+.nav-social-ul li a img:hover{
+    transform: scale(1.3);
 
 }
 
