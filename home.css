@@ -1,0 +1,21 @@
+* {
+    background-color: ;
+    margin: 0;
+    padding: 0;
+    font-family: "lobster", sans-serif;
+    box-sizing: border-box;
+    text-align: center;
+    font-size: 30px;
+    }
+
+#wel{
+    background-color: blueviolet;
+    color: white;
+    padding: 30px 0px;
+}
+
+.home{
+    color:blue;
+    font-weight: bolder;
+    font-size:larger;
+}
